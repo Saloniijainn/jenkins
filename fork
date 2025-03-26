@@ -1,0 +1,20 @@
+git init
+git clone
+cd
+git checkout -b feature-branch
+echo "hlo" >> hlo.txt
+git add hlo.txt
+git commit -m"added hlo.txt"
+git push origin feature-branch
+git checkout main
+git diff main feature-branch
+git merge feature-branch
+git pull origin main
+(forking)
+git clone
+cd
+git remote add upstream <orig url>
+git remote -v
+git branch -d feature-branch
+git push origin --delete feature-branch
+
