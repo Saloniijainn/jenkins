@@ -1,0 +1,14 @@
+git init
+git config --global user.email
+git clone
+cd
+git checkout -b branch1
+vi vvce.txt
+git add vvce.txt
+git commit -m "branch1 vvce"
+git checkout master
+git checkout main
+vi vvce.txt
+git add vvce.txt
+git commit -m"secondcommit"
+git merge branch1
