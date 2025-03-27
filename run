@@ -1,0 +1,7 @@
+gcc add.c -o add
+./add
+
+g++ add.cpp -o add
+./add
+
+python swap.py
