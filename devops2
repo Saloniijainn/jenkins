@@ -7,10 +7,19 @@ CMD ["java","Add"]
 docker build -t img1 .
 docker run img1
 
+class add{
+    public static void main(String[] args){
+        int a=5,b=3,c;
+        c=a+b;
+        System.out.println(c);
+    }
+}
+
 docker login 
 docker images
-docker tag img1:latest saloniijainn/add-app
-docker push saloniijainn/add-app
+docker tag saloni:latest saloniijainnn/add-app
+docker push saloniijainnn/add-app
+docker pull saloniijainnn/add-app
 
 package maven.lab6;
 
