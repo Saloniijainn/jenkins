@@ -7,9 +7,9 @@ CMD ["java","Add"]
 docker build -t img1 .
 docker run img1
 
+docker login 
 docker images
-docker login
-docker tag img1 saloniijainn/add-app
+docker tag img1:latest saloniijainn/add-app
 docker push saloniijainn/add-app
 
 package maven.lab6;
